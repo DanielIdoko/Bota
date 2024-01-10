@@ -69,49 +69,19 @@ def send_text():
     entry.delete(0, tk.END)
     handle_query(text)
 
-# Tkinter UI
-root = tk.Tk()
-root.title("Curiosity AI")
-root.geometry("380x500")
-root.attributes("-topmost", True)
-root.resizable(False, False)
-root.configure(bg="#1e1e1e")
 
-style = ttk.Style()
-style.theme_use("clam")
-style.configure("TButton",
-                font=("Segoe UI", 10),
-                padding=6,
-                background="#444",
-                foreground="white")
-style.map("TButton", background=[("active", "#555")])
 
-# Output Text
-output = tk.Text(root,
-                 wrap="word",
-                 bg="#121212",
-                 fg="white",
-                 font=("Segoe UI", 11),
-                 relief="flat",
-                 padx=10,
-                 pady=10)
-output.pack(fill="both", expand=True)
 
-# Bottom input frame
-bottom = tk.Frame(root, bg="#1e1e1e")
-bottom.pack(fill="x", pady=8)
 
-entry = tk.Entry(bottom,
-                 font=("Segoe UI", 11),
-                 bg="#222",
-                 fg="white",
-                 relief="flat")
-entry.pack(side="left", fill="x", expand=True, padx=(10, 5))
 
-send_btn = ttk.Button(bottom, text="Send", command=send_text)
-send_btn.pack(side="left", padx=5)
 
-voice_btn = ttk.Button(bottom, text="🎤", width=3, command=listen_voice)
-voice_btn.pack(side="left", padx=(5, 10))
 
-root.mainloop()
+
+
+
+
+
+
+
+
+
